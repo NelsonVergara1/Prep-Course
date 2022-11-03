@@ -130,6 +130,16 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
   
+  if (numero === 0 || numero === 1 ) return false
+
+  if (numero === 2 || numero === 3 || numero === 5 || numero === 7) return true
+
+  if (numero % 2 === 0 || numero % 3 === 0 || numero % 5 === 0 || numero % 7 === 0) return false
+
+  return true
+
+
+  
 }
 
 function esVerdadero(valor){
@@ -145,6 +155,13 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
   
+  let arr = [];
+
+  for (let i = 0; i <= 10; i++){
+    arr.push(6*i)
+  }
+  return arr
+  
 }
 
 function tieneTresDigitos(numero){
@@ -159,7 +176,16 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
 
-}
+  let n = 8;
+  let res = numero;
+  do {
+    n = n - 1
+    res = res + 5
+  } while (n > 0) 
+
+  return res
+  }
+
 
 
 // No modificar nada debajo de esta línea
